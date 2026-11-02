@@ -1,0 +1,1024 @@
+{
+ "version": 1,
+ "aviso": {
+  "activo": false,
+  "texto": ""
+ },
+ "cerradoHoy": false,
+ "horarios": [
+  {
+   "dia": "Domingo",
+   "abre": "",
+   "cierra": ""
+  },
+  {
+   "dia": "Lunes",
+   "abre": "09:30",
+   "cierra": "16:00"
+  },
+  {
+   "dia": "Martes",
+   "abre": "09:30",
+   "cierra": "19:00"
+  },
+  {
+   "dia": "Miércoles",
+   "abre": "09:30",
+   "cierra": "19:00"
+  },
+  {
+   "dia": "Jueves",
+   "abre": "09:30",
+   "cierra": "19:00"
+  },
+  {
+   "dia": "Viernes",
+   "abre": "09:30",
+   "cierra": "19:00"
+  },
+  {
+   "dia": "Sábado",
+   "abre": "",
+   "cierra": ""
+  }
+ ],
+ "menuSemana": {
+  "precioCompleto": 390,
+  "precioSolo": 340,
+  "dias": [
+   {
+    "dia": "Lunes",
+    "plato": "Salad bowl",
+    "desc": "Base de arroz y hojas de lechuga, pollo grillado o atún, maíz, tomate, pepino, zanahoria, repollo, huevo, queso, cebolla encurtida y un aderezo especial."
+   },
+   {
+    "dia": "Martes",
+    "plato": "Frikadelle con Kartoffelsalat",
+    "desc": "Hamburguesitas caseras de res y cordero en una suave salsa de mostaza, con la clásica ensalada alemana de papas, salchicha y salsa tártara."
+   },
+   {
+    "dia": "Miércoles",
+    "plato": "Pollo a la Toscana",
+    "desc": "Pollo salteado en una cremosa salsa de parmesano, albahaca fresca y tomates asados. Con fettuccini o arroz."
+   },
+   {
+    "dia": "Jueves",
+    "plato": "Pesca del día",
+    "desc": "Marinera de pescado o pescado a la plancha, con un tian de verduras (láminas de vegetales horneados a las hierbas)."
+   },
+   {
+    "dia": "Viernes",
+    "plato": "Shawarma de cerdo",
+    "desc": "Tiernas tiras de cerdo marinadas con especias, lechuga, tomate, cebolla y la clásica salsa de shawarma, envuelto en pan lavash."
+   }
+  ],
+  "vegetariano": "Curry de lentejas al estilo indio · Pakoras de vegetales"
+ },
+ "carta": [
+  {
+   "cat": "Cafetería",
+   "items": [
+    {
+     "n": "Espresso",
+     "d": "Café concentrado.",
+     "p": 130
+    },
+    {
+     "n": "Americano",
+     "d": "Espresso diluido con agua caliente.",
+     "p": 150
+    },
+    {
+     "n": "Capuchino",
+     "d": "Leche espumada con una medida de espresso.",
+     "p": 180
+    },
+    {
+     "n": "Cortado",
+     "d": "Leche espumada con una medida de café suave.",
+     "p": 170
+    },
+    {
+     "n": "Latte",
+     "d": "Espresso con leche vaporizada y una pequeña capa de espuma.",
+     "p": 160
+    },
+    {
+     "n": "Moka o caramel macchiato",
+     "d": "Espresso con leche vaporizada, chocolate o caramelo toffee y crema batida.",
+     "p": 190
+    },
+    {
+     "n": "Chocolate caliente",
+     "d": "Puro chocolate con crema batida.",
+     "p": 200
+    },
+    {
+     "n": "Submarino",
+     "d": "Leche espumada con cucharita de chocolate.",
+     "p": 170
+    }
+   ]
+  },
+  {
+   "cat": "Bebidas frías",
+   "items": [
+    {
+     "n": "Iced coffee caramel macchiato",
+     "d": "Leche espumada, caramelo toffee y una medida de espresso.",
+     "p": 190
+    },
+    {
+     "n": "Jugo de naranja",
+     "d": "Natural.",
+     "p": 180
+    },
+    {
+     "n": "Limonada clásica",
+     "d": "Clásica o con jengibre y menta.",
+     "p": 170
+    },
+    {
+     "n": "Maracuyada",
+     "d": "Jugo de naranja y maracuyá.",
+     "p": 180
+    },
+    {
+     "n": "Licuado o batido de bananas",
+     "d": "Licuado multifruta / batido de bananas con leche y caramelo.",
+     "p": 180
+    },
+    {
+     "n": "Milkshake",
+     "d": "Dulce de leche · Chocolate · Frutos rojos · Frutilla.",
+     "p": 220
+    }
+   ]
+  },
+  {
+   "cat": "Tentación",
+   "items": [
+    {
+     "n": "Carrot cake",
+     "d": "Cake de zanahoria, especias y nueces con frosting de cream cheese.",
+     "p": 150
+    },
+    {
+     "n": "Red velvet",
+     "d": "Cake aterciopelado con frosting de cream cheese, curd de limón y frutos rojos.",
+     "p": 190
+    },
+    {
+     "n": "Brownie",
+     "d": "Brownie clásico con dulce de leche.",
+     "p": 170
+    },
+    {
+     "n": "Crumble",
+     "d": "Masa sablé, manzanas y crumble.",
+     "p": 180
+    },
+    {
+     "n": "Budín",
+     "d": "",
+     "p": 60
+    },
+    {
+     "n": "Blondie de canela y manzana",
+     "d": "Cake de canela y manzana con frosting y canela.",
+     "p": 150
+    },
+    {
+     "n": "Pasta frola",
+     "d": "Clásica pastafrola de membrillo.",
+     "p": 100
+    },
+    {
+     "n": "Redondito de limón",
+     "d": "Cake de limón con glacé de limón y amapola.",
+     "p": 120
+    },
+    {
+     "n": "Porción de postre",
+     "d": "Tortas y postres del día.",
+     "p": 230
+    }
+   ]
+  },
+  {
+   "cat": "Entradas y bowls",
+   "items": [
+    {
+     "n": "Sopa del día",
+     "d": "Consultar.",
+     "p": 200
+    },
+    {
+     "n": "Salad César bowl",
+     "d": "Fusilli, mix de verdes, pollo rebozado, panceta, lascas de parmesano y aderezo césar.",
+     "p": 390,
+     "foto": "img/cesar-bowl.jpg"
+    },
+    {
+     "n": "Ensalada César",
+     "d": "Lechuga, panceta, pollo grillado, lascas de parmesano, aderezo césar y croutons.",
+     "p": 340,
+     "foto": "img/ensalada-cesar.jpg"
+    },
+    {
+     "n": "Bowl",
+     "d": "Arroz con sésamo, lechuga, tomate, garbanzos marinados, cebolla encurtida, morrón asado, huevo, queso crema, palta y proteína a elección (pollo, camarones o salmón).",
+     "p": 390,
+     "foto": "img/bowl.jpg"
+    }
+   ]
+  },
+  {
+   "cat": "Principales",
+   "items": [
+    {
+     "n": "Bife ancho",
+     "d": "220 g de carne al punto con guarnición.",
+     "p": 470,
+     "foto": "img/bife.jpg"
+    },
+    {
+     "n": "Milanesa de berenjenas",
+     "d": "Berenjenas rebozadas con guarnición.",
+     "p": 380,
+     "foto": "img/milanesa-berenjena.jpg"
+    },
+    {
+     "n": "Pollo al ajillo",
+     "d": "Cubos de pollo al ajillo con puré de papas, arroz o papas fritas.",
+     "p": 390
+    },
+    {
+     "n": "Suprema grillada",
+     "d": "Pechuga de pollo abierta mariposa a la plancha con guarnición.",
+     "p": 390
+    }
+   ]
+  },
+  {
+   "cat": "Minutas",
+   "items": [
+    {
+     "n": "Milanesa al pan",
+     "d": "Lechuga, tomate, huevo, jamón y queso, con papas fritas.",
+     "p": 330
+    },
+    {
+     "n": "Milanesa al plato",
+     "d": "De carne o pollo, con guarnición.",
+     "p": 360
+    },
+    {
+     "n": "Napolitana",
+     "d": "Carne o pollo con salsa filetto, jamón y mozzarella, con guarnición.",
+     "p": 390
+    },
+    {
+     "n": "Hamburguesa",
+     "d": "Al pan con mayonesa, lechuga, tomate, cebolla, queso y panceta, con papas fritas.",
+     "p": 300
+    },
+    {
+     "n": "Chivito al pan",
+     "d": "De carne o pollo, lechuga, tomate, jamón, queso, panceta y huevo frito, con papas fritas.",
+     "p": 380
+    },
+    {
+     "n": "Omelette",
+     "d": "Rellena de jamón y queso o caprese, con guarnición.",
+     "p": 350,
+     "foto": "img/omelette.jpg"
+    },
+    {
+     "n": "Tarta del día con ensalada",
+     "d": "Consultar la tarta del día. Con ensalada mixta.",
+     "p": 300
+    },
+    {
+     "n": "Porción de papas fritas",
+     "d": "",
+     "p": 190
+    },
+    {
+     "n": "Ravioles",
+     "d": "De ricotta o de verduras.",
+     "p": 370
+    },
+    {
+     "n": "Spaghettis Alfredo",
+     "d": "Con salsa y topping a elección.",
+     "p": 380
+    }
+   ]
+  },
+  {
+   "cat": "Sándwiches",
+   "items": [
+    {
+     "n": "Emperador",
+     "d": "Sándwich caliente de jamón y queso.",
+     "p": 290
+    },
+    {
+     "n": "Emperatriz",
+     "d": "Sándwich caliente de lomito y cheddar.",
+     "p": 300
+    },
+    {
+     "n": "Soberano",
+     "d": "Sándwich caliente de queso, tomate y albahaca.",
+     "p": 290
+    },
+    {
+     "n": "Monarca",
+     "d": "Sándwich caliente de queso y cebolla.",
+     "p": 290
+    },
+    {
+     "n": "Club sándwich",
+     "d": "Tres capas con lechuga, tomate, jamón, queso, pollo, huevo y panceta, con papas fritas. Para compartir.",
+     "p": 750
+    },
+    {
+     "n": "Ciabatta Puccia",
+     "d": "Queso crema, mozzarella, bondiola, berenjena asada, pesto y tomate fresco.",
+     "p": 380
+    },
+    {
+     "n": "Ciabatta Milan",
+     "d": "Queso crema, salame, mortadela y pesto.",
+     "p": 370
+    },
+    {
+     "n": "Ciabatta clásica",
+     "d": "Rúcula, bondiola y queso crema / jamón y queso.",
+     "p": 340
+    },
+    {
+     "n": "Tostón Eiffel",
+     "d": "Queso crema, palta, tomate, huevo poché, aceite de oliva y sésamo.",
+     "p": 340,
+     "foto": "img/avocado-toast.jpg"
+    },
+    {
+     "n": "8PM de la casa",
+     "d": "Pan artesanal de orégano, queso crema, cheddar, lomito, huevo revuelto con panceta y ciboulette.",
+     "p": 360
+    }
+   ]
+  },
+  {
+   "cat": "Croissants y desayunos",
+   "items": [
+    {
+     "n": "Croissant 8PM",
+     "d": "Queso crema, cheddar, lomito, huevo revuelto, panceta y ciboulette.",
+     "p": 350
+    },
+    {
+     "n": "Croissant clásico",
+     "d": "Jamón y queso o lomito y cheddar.",
+     "p": 290
+    },
+    {
+     "n": "Croissant Milan",
+     "d": "Queso crema, salame, mortadela, pistachos y pesto.",
+     "p": 340
+    },
+    {
+     "n": "Croissant Roma",
+     "d": "Rúcula, queso crema y bondiola.",
+     "p": 320
+    },
+    {
+     "n": "Medialuna clásica",
+     "d": "Rellena de jamón y queso.",
+     "p": 250
+    },
+    {
+     "n": "Una pausa",
+     "d": "Huevos revueltos con panceta y ciboulette, 2 tostadas, queso crema, palta y tomate.",
+     "p": 370
+    },
+    {
+     "n": "Huevo revuelto",
+     "d": "Clásico o con panceta y ciboulette.",
+     "p": 200
+    },
+    {
+     "n": "Scons",
+     "d": "3 scons de queso con mermelada y manteca.",
+     "p": 160
+    },
+    {
+     "n": "Tostadas",
+     "d": "Con mermelada y manteca.",
+     "p": 120
+    },
+    {
+     "n": "Merienda para dos",
+     "d": "Bebidas calientes, jugo de naranja, agua, budín, alfajorcitos, medialunas rellenas, scons, tostadas, mermelada, manteca, sándwich caliente y postre a elección.",
+     "p": 1390,
+     "foto": "img/mesa.jpg"
+    }
+   ]
+  }
+ ],
+ "bocaditos": [
+  {
+   "n": "Empanaditas",
+   "d": "Jamón y queso · Carne · Pollo · Queso y cebolla · Caprese",
+   "p": 41,
+   "foto": "img/b/empanaditas.jpg"
+  },
+  {
+   "n": "Mini quiche",
+   "d": "Jamón y queso · Champiñón · Queso y cebolla · Caprese",
+   "p": 38,
+   "foto": "img/b/mini-quiche.jpg"
+  },
+  {
+   "n": "Croquetitas",
+   "d": "Papa, jamón y queso · Espinaca y queso · Papa y bondiola · Clásicas de papa, ajo y perejil",
+   "p": 39,
+   "foto": "img/b/croquetitas.jpg"
+  },
+  {
+   "n": "Tequeños",
+   "d": "Queso · Jamón y queso · Queso y aceitunas",
+   "p": 38,
+   "foto": "img/b/tequenos.jpg"
+  },
+  {
+   "n": "Medialunas de copetín",
+   "d": "Lomito y cheddar · Jamón y queso · Salame y queso · Rúcula, tomate y pavita (medianas $56)",
+   "p": 36,
+   "foto": "img/b/medialunas.jpg"
+  },
+  {
+   "n": "Bocado de tarta",
+   "d": "Jamón y queso · Pascualina · Gallega · Zapallitos · Puerro y panceta · Calabaza y cebolla · Pollo y champiñón · Napolitana · Verduras",
+   "p": 28,
+   "foto": "img/b/bocado-de-tarta.jpg"
+  },
+  {
+   "n": "Pincho de hojaldre",
+   "d": "Atún y huevo de codorniz · Mousse de jamón y cereza · Paté de pavita y queso crema · Queso crema y salmón ahumado",
+   "p": 43,
+   "foto": "img/b/pincho-de-hojaldre.jpg"
+  },
+  {
+   "n": "Roll",
+   "d": "Pollo y vegetales · Vegetales y tofu · Verduras",
+   "p": 38,
+   "foto": "img/b/roll.jpg"
+  },
+  {
+   "n": "Pincho de tortilla",
+   "d": "Tortilla española con alioli y bondiola o jamón crudo · Con lactonesa de perejil y tomates asados",
+   "p": 43,
+   "foto": "img/b/pincho-de-tortilla.jpg"
+  },
+  {
+   "n": "Canastitas frías",
+   "d": "Pollo · Humita · Jamón · Vegetales · Guacamole de guisantes con salmón",
+   "p": 36,
+   "foto": "img/b/canastitas-frias.jpg"
+  },
+  {
+   "n": "Pancitos / Pebetes",
+   "d": "Lomito y cheddar · Jamón y queso · Salame y queso · Rúcula, bondiola y queso crema",
+   "p": 41,
+   "foto": "img/b/pancitos-pebetes.jpg"
+  },
+  {
+   "n": "Canastitas de ensalada César",
+   "d": "Ensalada césar, parmesano, panceta crocante, pollo grillado, aderezo y croutons",
+   "p": 38,
+   "foto": "img/b/canastitas-de-ensalada-cesar.jpg"
+  },
+  {
+   "n": "Brusquetitas",
+   "d": "Palta, queso crema, tomates y sésamo · Queso crema, pimiento asado y verdes · Queso crema, ciboulette y salmón",
+   "p": 41,
+   "foto": "img/b/brusquetitas.jpg"
+  },
+  {
+   "n": "Scons rolls",
+   "d": "Queso y verdeo · Queso y orégano · Panceta y aceitunas",
+   "p": 38,
+   "foto": "img/b/scons-rolls.jpg"
+  },
+  {
+   "n": "Hamburguesita",
+   "d": "Lechuga, tomate y huevo · Rúcula, tomate y cheddar",
+   "p": 58,
+   "foto": "img/b/hamburguesita.jpg"
+  },
+  {
+   "n": "Sándwich de nuez",
+   "d": "Jamón y queso · Rúcula, queso crema y bondiola",
+   "p": 39,
+   "foto": "img/b/sandwiche-de-nuez.jpg"
+  },
+  {
+   "n": "Sándwich pulled pork",
+   "d": "Cerdo braseado con salsa barbacoa y coleslaw",
+   "p": 56,
+   "foto": "img/b/sandwiche-pulled-pork.jpg"
+  },
+  {
+   "n": "Sándwich en pan batta",
+   "d": "Pesto, salame, mortadela y queso crema · Rúcula, jamón crudo y queso crema",
+   "p": 38,
+   "foto": "img/b/sandwiche-en-pan-batta.jpg"
+  },
+  {
+   "n": "Corn dogs",
+   "d": "Salsa a elección: dijón, barbacoa, teriyaki o alioli",
+   "p": 32,
+   "foto": "img/b/corn-dogs.jpg"
+  },
+  {
+   "n": "Roll de berenjena",
+   "d": "Berenjena grillada rellena de queso azul",
+   "p": 48,
+   "foto": "img/b/roll-de-berenjena.jpg"
+  },
+  {
+   "n": "Sándwiches simples",
+   "d": "Jamón y queso (mixtos olímpicos, atún, choclo, olivas o pavita: $36)",
+   "p": 26,
+   "foto": "img/b/sandwiches.jpg"
+  },
+  {
+   "n": "Fingers de pollo o pescado",
+   "d": "Con salsa a elección: agridulce, barbacoa, alioli, salsa de pimientos o alioli con perejil",
+   "p": 56,
+   "foto": "img/b/finger-de-pollo-o-pescado.jpg"
+  },
+  {
+   "n": "Milanesitas al pan",
+   "d": "Lechuga, tomate y huevo · Rúcula, tomate y queso. De pollo, carne o pescado",
+   "p": 82,
+   "foto": "img/b/milanesitas.jpg"
+  },
+  {
+   "n": "Tarta tipo fainá",
+   "d": "Jamón y queso · Solo queso",
+   "p": 32,
+   "foto": "img/b/tarta-tipo-faina.jpg"
+  },
+  {
+   "n": "Jesuitas",
+   "d": "Jamón y queso · Solo queso",
+   "p": 37,
+   "foto": "img/b/jesuitas.jpg"
+  },
+  {
+   "n": "Bocata",
+   "d": "Lomito y cheddar · Jamón y queso · Salame y queso · Olímpica",
+   "p": 41,
+   "foto": "img/b/bocata.jpg"
+  },
+  {
+   "n": "Quesito",
+   "d": "Quesitos rebozados con salsa criolla",
+   "p": 32,
+   "foto": "img/b/quesito.jpg"
+  },
+  {
+   "n": "Arancini",
+   "d": "Croquetitas de risotto: hongos · cabutiá y rúcula · cítrico y puerro · parmesana",
+   "p": 78,
+   "foto": "img/b/aracini.jpg"
+  },
+  {
+   "n": "Shot de romesco",
+   "d": "Romesco de pimiento con cous cous de coliflor asado",
+   "p": 56,
+   "foto": "img/b/shot-de-romesco.jpg"
+  },
+  {
+   "n": "Villeroy",
+   "d": "Jamón y queso · Solo queso",
+   "p": 31,
+   "foto": "img/b/villeroy.jpg"
+  },
+  {
+   "n": "Wraps",
+   "d": "Vegetales · Vegetales y pollo · Cerdo braseado",
+   "p": 48,
+   "foto": "img/b/wraps.jpg"
+  },
+  {
+   "n": "Shot de remolacha",
+   "d": "Salsa de remolacha con trufa de queso y nueces",
+   "p": 56,
+   "foto": "img/b/shot-especial.jpg"
+  },
+  {
+   "n": "Taquitos",
+   "d": "Pico de gallo y carne · Cerdo y frijol tropero · Pollo y guacamole",
+   "p": 38,
+   "foto": "img/b/taquitos.jpg"
+  },
+  {
+   "n": "Arrolladitos",
+   "d": "De vegetales con salsa de soja o teriyaki",
+   "p": 28,
+   "foto": "img/b/arrolladitos.jpg"
+  },
+  {
+   "n": "Mini pizza",
+   "d": "Simple · Con mozzarella · Mozzarella y pesto · Mozzarella, cebolla y aceitunas · Mozzarella y panceta",
+   "p": 38,
+   "foto": "img/b/mini-pizza.jpg"
+  },
+  {
+   "n": "Pinchos caprese",
+   "d": "Tomates marinados, albahaca, queso bocconcino y emulsión de albahaca",
+   "p": 38,
+   "foto": "img/b/pinchos-capresse.jpg"
+  },
+  {
+   "n": "Brochette",
+   "d": "Carne y vegetales · Pollo y vegetales · Vegetales y bondiola · Vegetales",
+   "p": 41,
+   "foto": "img/b/brochette.jpg"
+  },
+  {
+   "n": "Pinchos rolls",
+   "d": "Crocante de pollo · de bondiola · de carne",
+   "p": 71,
+   "foto": "img/b/pinchos-rolls.jpg"
+  },
+  {
+   "n": "Carrot cream",
+   "d": "Tostadita de zanahoria con queso crema, ciboulette y eneldo",
+   "p": 32,
+   "foto": "img/b/carrot-cream.jpg"
+  },
+  {
+   "n": "Sándwich primavera",
+   "d": "Clásico sándwich de pionono primavera",
+   "p": 39,
+   "foto": "img/b/sandwiche-primavera.jpg"
+  },
+  {
+   "n": "Humita",
+   "d": "Tostadita de maíz con humita",
+   "p": 32,
+   "foto": "img/b/humita.jpg"
+  },
+  {
+   "n": "Tostadita criolla",
+   "d": "Con lengua a la vinagreta · Con mostaza, roast beef y alcaparras",
+   "p": 46,
+   "foto": "img/b/tostadita-criolla.jpg"
+  },
+  {
+   "n": "Pincho",
+   "d": "Carne, panceta y pimiento · Pildorita envuelta en panceta · Pildorita en masa crocante y sésamo",
+   "p": 37,
+   "foto": "img/b/pincho.jpg"
+  },
+  {
+   "n": "Berenjena asada",
+   "d": "Milanesita de berenjena con ensalada de hierbas y cítrico y salsa griega",
+   "p": 71,
+   "foto": "img/b/berenjena-asada.jpg"
+  },
+  {
+   "n": "Quesadilla",
+   "d": "Queso y cebolla · Carne y cheddar · Pollo criollo",
+   "p": 32,
+   "foto": "img/b/quesadilla.jpg"
+  },
+  {
+   "n": "Pan de pita",
+   "d": "Bondiola y rúcula · Verduras · Pollo y verduras · Olímpica · Caprese",
+   "p": 48,
+   "foto": "img/b/pan-de-pita.jpg"
+  },
+  {
+   "n": "Club sándwich",
+   "d": "Pollo, jamón, queso, huevo, panceta, lechuga y tomate",
+   "p": 56,
+   "foto": "img/b/club-sandwiche.jpg"
+  }
+ ],
+ "combos": [
+  {
+   "personas": 6,
+   "precio": 3035,
+   "items": [
+    "12 sándwiches mixtos",
+    "12 pancitos / pebetes",
+    "12 empanaditas",
+    "12 croquetitas",
+    "12 bocados de tarta",
+    "12 medialunas de copetín",
+    "6 sándwiches pulled pork"
+   ]
+  },
+  {
+   "personas": 10,
+   "precio": 6075,
+   "items": [
+    "20 sándwiches de nuez",
+    "16 pancitos / pebetes",
+    "10 brusquetitas",
+    "20 croquetitas",
+    "20 empanaditas",
+    "20 mini quiches",
+    "10 rolls / wraps",
+    "10 fingers de pollo o pescado",
+    "10 hamburguesitas"
+   ]
+  },
+  {
+   "personas": 15,
+   "precio": 8865,
+   "items": [
+    "30 sándwiches mixtos",
+    "30 pancitos / pebetes",
+    "15 canastitas de ensalada",
+    "30 croquetitas",
+    "30 empanaditas",
+    "20 pinchos de tortilla",
+    "15 rolls salados",
+    "15 hamburguesitas",
+    "15 sándwiches pulled pork"
+   ]
+  },
+  {
+   "personas": 20,
+   "precio": 12120,
+   "items": [
+    "40 sándwiches mixtos",
+    "40 pancitos / pebetes",
+    "20 sándwiches en ciabatta",
+    "40 croquetitas",
+    "40 empanaditas",
+    "40 tequeños",
+    "20 bocados de tarta",
+    "20 canastitas frías",
+    "20 milanesitas al pan"
+   ]
+  },
+  {
+   "personas": 30,
+   "precio": 17655,
+   "items": [
+    "45 sándwiches mixtos",
+    "45 pancitos / pebetes",
+    "30 sándwiches de nuez",
+    "45 croquetitas",
+    "45 empanaditas",
+    "30 tequeños",
+    "30 corn dogs",
+    "20 pinchos de hojaldre",
+    "20 canastitas frías",
+    "20 rolls de berenjena",
+    "20 bocados de tarta",
+    "30 hamburguesitas"
+   ]
+  },
+  {
+   "personas": 50,
+   "precio": 30015,
+   "items": [
+    "75 sándwiches mixtos",
+    "75 pancitos / pebetes",
+    "50 sándwiches de nuez",
+    "75 croquetitas",
+    "75 empanaditas",
+    "50 corn dogs",
+    "30 pinchos de hojaldre",
+    "30 canastitas frías",
+    "30 rolls de berenjena",
+    "50 sándwiches pulled pork",
+    "35 milanesitas al pan",
+    "35 hamburguesitas"
+   ]
+  }
+ ],
+ "postres": [
+  {
+   "n": "Torta cumple",
+   "d": "Bizcochuelo de vainilla o chocolate con buttercream y durazno.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/torta-cumple.webp"
+  },
+  {
+   "n": "Lemon pie",
+   "d": "Mousse de limón con base sablé cubierta de merengue.",
+   "p16": 1100,
+   "p28": 2300,
+   "foto": "img/p/lemon-pie.webp"
+  },
+  {
+   "n": "Chajá de frutillas",
+   "d": "Clásico chajá de frutillas con crema, merengue y fruta fresca.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/chaja-de-frutillas.webp"
+  },
+  {
+   "n": "Chajá de duraznos",
+   "d": "Clásico chajá de duraznos con crema y merengue.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/chaja-de-duraznos.webp"
+  },
+  {
+   "n": "Ramón Navarro",
+   "d": "Bizcochuelo de chocolate relleno de dulce de leche.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/ramon-navarro.webp"
+  },
+  {
+   "n": "Clásica torta de cumple",
+   "d": "Bizcochuelo de vainilla relleno de dulce de leche y merengue.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/clasica-torta-de-cumple.webp"
+  },
+  {
+   "n": "Cheesecake de Oreo",
+   "d": "Cheesecake de Oreo relleno de dulce de leche.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/cheesecake-de-oreo.webp"
+  },
+  {
+   "n": "Cheesecake",
+   "d": "Cheesecake clásico con frutos rojos o frutilla.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/cheesecake.webp"
+  },
+  {
+   "n": "Selva negra",
+   "d": "Bizcochuelo de chocolate, dulce de leche, crema y cerezas, cubierta de chocolate.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/selva-negra.webp"
+  },
+  {
+   "n": "After eight",
+   "d": "Base de chocolate, mousse de menta granizada y ganache de chocolate.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/after-eight.webp"
+  },
+  {
+   "n": "Cremoso de dulce de leche",
+   "d": "Base sablé, mousse de dulce de leche granizado, merengue y cacao.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/cremoso-de-dulce-de-leche.webp"
+  },
+  {
+   "n": "Coco Malibú",
+   "d": "Base de brownie, mousse de coco y Malibú, dulce de leche y trufas.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/coco-malibu.webp"
+  },
+  {
+   "n": "Tartaleta lemon pie",
+   "d": "Sablé, curd de limón y merengue.",
+   "p16": 800,
+   "p28": 1450,
+   "foto": "img/p/tartaleta-lemon-pie.webp"
+  },
+  {
+   "n": "Tartaleta frutal",
+   "d": "Sablé, crema pastelera y fruta (26 cm).",
+   "p16": 800,
+   "p28": 1450,
+   "foto": "img/p/tartaleta-frutal.webp"
+  },
+  {
+   "n": "Matilda",
+   "d": "Bizcochuelo de chocolate relleno de chocolate, decorado con dulce de leche.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/matilda.webp"
+  },
+  {
+   "n": "Crumble de manzanas",
+   "d": "Crumble de manzana cubierto con merengue.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/crumble-de-manzanas.webp"
+  },
+  {
+   "n": "Marquise de naranja y chocolate",
+   "d": "Bizcochito de matcha, cremoso de chocolate y naranja, gelée de frambuesas y pistachos.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/marquise-de-naranja-y-chocolate.webp"
+  },
+  {
+   "n": "Mousse de dulce de leche",
+   "d": "Base de brownie, mousse de dulce de leche y ganache de chocolate.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/mousse-de-dulce-de-leche.webp"
+  },
+  {
+   "n": "Red velvet",
+   "d": "Rellena de frutos rojos, curd de lima y cream cheese.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/red-velvet.webp"
+  },
+  {
+   "n": "Torta praliné",
+   "d": "Bizcochuelo de vainilla con crema y praliné de nueces y avellanas.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/torta-praline.webp"
+  },
+  {
+   "n": "Torta vasca",
+   "d": "Sola o con salsa de frutos rojos.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/torta-vasca.webp"
+  },
+  {
+   "n": "Diamanta",
+   "d": "Mousse de chocolate y de dulce de leche, plantillas y merengue.",
+   "p16": 1500,
+   "p28": 2700,
+   "foto": "img/p/diamanta.webp"
+  },
+  {
+   "n": "Cremoso de maracuyá",
+   "d": "Base de chocolate, mousse de maracuyá y gelée de maracuyá.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/cremoso-de-maracuya.webp"
+  },
+  {
+   "n": "Tiramisú",
+   "d": "El clásico.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/tiramisu.webp"
+  },
+  {
+   "n": "Rogel",
+   "d": "Clásico rogel, con masa neutra o de chocolate.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/rogel.webp"
+  },
+  {
+   "n": "Pasión de chocolate",
+   "d": "Brownie, dulce de leche, crema con frutillas, chocolate y merengue.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/pasion-de-chocolate.webp"
+  },
+  {
+   "n": "Brownie",
+   "d": "Brownie con dulce de leche y merengue.",
+   "p16": 1300,
+   "p28": 2500,
+   "foto": "img/p/brownie.webp"
+  },
+  {
+   "n": "Gâteau de frutillas",
+   "d": "Bizcochuelo de vainilla, crema chantilly y frutillas.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/gateau-de-frutillas.webp"
+  },
+  {
+   "n": "Fraisier de frutillas",
+   "d": "Crema pastelera, frutillas y gelée.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/frassier-de-frutillas.webp"
+  },
+  {
+   "n": "Key lime pie",
+   "d": "Cítricos y leche condensada, decorado con crema batida.",
+   "p16": 1400,
+   "p28": 2600,
+   "foto": "img/p/key-lime-pie.webp"
+  }
+ ]
+}
