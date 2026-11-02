@@ -199,34 +199,81 @@
   <a class="madeby" href="https://tuwebuy.online" target="_blank" rel="noopener"><span>Hecho con</span><img src="img/tuwebuy.png" alt="tuwebuy.online" width="105" height="16" loading="lazy"></a>
 </footer>
 
-<!-- Pedido (carrito) -->
+<!-- Pedido (carrito en 3 pasos) -->
 <div class="velo" id="velo"></div>
-<aside class="cajon" id="cajon" aria-label="Tu pedido" aria-hidden="true">
-  <div class="cajon-cab">
-    <h3>Tu <em>pedido</em></h3>
-    <button class="x" id="cerrarPedido" aria-label="Cerrar">×</button>
+<aside class="cajon" id="cajon" aria-label="Tu pedido" aria-hidden="true" data-paso="0">
+  <header class="cj-cab">
+    <div class="cj-fila">
+      <img src="img/logo.png" alt="" class="cj-logo">
+      <div class="cj-tit"><h3>Tu <em>pedido</em></h3><span id="cjSub">Vacío por ahora</span></div>
+      <button class="x" id="cerrarPedido" aria-label="Cerrar">×</button>
+    </div>
+    <ol class="cj-pasos" aria-hidden="true">
+      <li class="on"><i>1</i>Pedido</li>
+      <li><i>2</i>Entrega</li>
+      <li><i>3</i>¡Listo!</li>
+      <span class="cj-barra"></span>
+    </ol>
+  </header>
+
+  <div class="cj-vistas">
+    <div class="cj-riel" id="cjRiel">
+      <!-- 1 · Lo que lleva -->
+      <section class="cj-v">
+        <div id="lista"></div>
+        <div class="cj-suge" id="cjSuge" hidden></div>
+      </section>
+
+      <!-- 2 · Entrega -->
+      <section class="cj-v">
+        <form class="cj-form" id="formPedido" novalidate>
+          <button type="button" class="cj-volver" data-ir="0">← Volver al pedido</button>
+          <p class="cj-et">¿Cómo lo querés?</p>
+          <div class="cj-modo" role="radiogroup">
+            <label><input type="radio" name="entrega" value="Retiro en el local" checked>
+              <span><b>🏪</b>Retiro<small>Porongos 2930</small></span></label>
+            <label><input type="radio" name="entrega" value="Envío a domicilio">
+              <span><b>🛵</b>Envío<small>según la zona</small></span></label>
+          </div>
+          <label class="cj-campo"><span>Tu nombre</span><input name="nombre" required autocomplete="name" placeholder="Ej: Sofía"></label>
+          <label class="cj-campo"><span>Celular <i>(opcional)</i></span><input name="telefono" type="tel" inputmode="tel" autocomplete="tel" placeholder="09X XXX XXX"></label>
+          <label class="cj-campo" id="cjDir" hidden><span>Dirección de entrega</span><input name="direccion" autocomplete="street-address" placeholder="Calle, número, apto"></label>
+          <p class="cj-et">¿Para cuándo?</p>
+          <div class="cj-dias" id="cjDias"></div>
+          <div class="cj-dos">
+            <label class="cj-campo"><span>Fecha</span><input name="fecha" type="date"></label>
+            <label class="cj-campo"><span>Hora</span><input name="hora" type="time" value="12:30"></label>
+          </div>
+          <label class="cj-campo"><span>Algo más <i>(opcional)</i></span><textarea name="nota" rows="2" placeholder="Sabores, alergias, dedicatoria para la torta…"></textarea></label>
+          <p class="cj-aviso" id="notaFecha" hidden></p>
+        </form>
+      </section>
+
+      <!-- 3 · Listo -->
+      <section class="cj-v cj-listo">
+        <div class="cj-check"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27l7 7 15-16"/></svg></div>
+        <h4>¡Pedido <em>enviado!</em></h4>
+        <p class="cj-num" id="cjNum"></p>
+        <p>Te abrimos WhatsApp con el pedido escrito. Si no se abrió, tocá el botón de abajo. Te contestamos para confirmar<span id="cjSenaTxt"></span>.</p>
+        <button class="cj-btn-pdf" id="cjPdf"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Descargar comprobante (PDF)</button>
+        <a class="cj-btn-wa" id="cjWaOtra" target="_blank" rel="noopener">Abrir WhatsApp de nuevo</a>
+        <button class="cj-volver" id="cjOtro">Hacer otro pedido</button>
+      </section>
+    </div>
   </div>
-  <div class="cajon-lista" id="lista"></div>
-  <form class="cajon-form" id="formPedido">
-    <div class="seg" role="radiogroup">
-      <label><input type="radio" name="entrega" value="Retiro en el local" checked><span>Retiro</span></label>
-      <label><input type="radio" name="entrega" value="Envío a domicilio"><span>Envío</span></label>
+
+  <footer class="cj-pie" id="cjPie">
+    <div class="cj-tot">
+      <span>Total estimado</span>
+      <b id="total">$0</b>
+      <small id="cjSena"></small>
     </div>
-    <input name="nombre" placeholder="Tu nombre" required autocomplete="name">
-    <input name="direccion" placeholder="Dirección de entrega" autocomplete="street-address" hidden>
-    <div class="dos">
-      <input name="fecha" type="date" aria-label="Fecha">
-      <input name="hora" type="time" aria-label="Hora" value="12:30">
-    </div>
-    <textarea name="nota" rows="2" placeholder="Algo más? (sabores, alergias, dedicatoria…)"></textarea>
-    <p class="mini" id="notaFecha"></p>
-    <div class="cajon-tot"><span>Total estimado</span><b id="total">$0</b></div>
-    <button class="btn btn-wa" type="submit">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.3Z"/></svg>
-      Enviar pedido por WhatsApp</button>
-    <p class="mini centro">Te respondemos por WhatsApp para confirmar y coordinar la seña.</p>
-  </form>
+    <button class="cj-sig" id="cjSig" disabled>Continuar <span>→</span></button>
+  </footer>
 </aside>
+
+<!-- Comprobante (se dibuja fuera de pantalla y se pasa a PDF) -->
+<div class="comp-caja" aria-hidden="true"><div class="comp" id="comp"></div></div>
 
 <a class="wa-flot" id="waFlot" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.8-1.1-4.6-4-4.8-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.3Z"/></svg>

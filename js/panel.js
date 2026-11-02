@@ -284,7 +284,7 @@
     pedidos() {
       return `<h2>Pedidos <em>web</em></h2><p class="ayuda">Todo lo que la gente armó en la web y mandó por WhatsApp. Sirve para no perder ninguno y ver qué se pide más.</p>
       <button class="btn-suave" data-acc="recargarPedidos" style="margin-bottom:14px">↻ Actualizar</button>
-      ${pedidos.length ? pedidos.map((p) => `<div class="pedido"><div class="pedido-cab"><div><b>${esc(p.nombre)}</b><br>
+      ${pedidos.length ? pedidos.map((p) => `<div class="pedido"><div class="pedido-cab"><div><b>${esc(p.nombre)}</b>${p.numero ? ` <small style="opacity:.55">${esc(p.numero)}</small>` : ""}${p.telefono ? `<br><a href="https://wa.me/598${esc(String(p.telefono).replace(/\D/g, "").replace(/^0/, ""))}" target="_blank" style="font-size:13px;font-weight:700;color:var(--salvia)">💬 ${esc(p.telefono)}</a>` : ""}<br>
         <span class="chip">${esc(p.entrega)}</span><span class="chip">${esc(p.fecha || "")} ${esc(p.hora || "")}</span></div><span class="tot">${plata(p.total)}</span></div>
         <pre>${esc(p.detalle)}${p.direccion ? "\n📍 " + esc(p.direccion) : ""}${p.nota ? "\n📝 " + esc(p.nota) : ""}</pre>
         <small style="opacity:.55">Recibido ${new Date(p.creado).toLocaleString("es-UY")}</small></div>`).join("")
