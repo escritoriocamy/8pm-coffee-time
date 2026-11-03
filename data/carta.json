@@ -813,210 +813,210 @@
   {
    "n": "Torta cumple",
    "d": "Bizcochuelo de vainilla o chocolate con buttercream y durazno.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/torta-cumple.webp"
   },
   {
    "n": "Lemon pie",
    "d": "Mousse de limón con base sablé cubierta de merengue.",
-   "p16": 1100,
+   "p18": 1100,
    "p28": 2300,
    "foto": "img/p/lemon-pie.webp"
   },
   {
    "n": "Chajá de frutillas",
    "d": "Clásico chajá de frutillas con crema, merengue y fruta fresca.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/chaja-de-frutillas.webp"
   },
   {
    "n": "Chajá de duraznos",
    "d": "Clásico chajá de duraznos con crema y merengue.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/chaja-de-duraznos.webp"
   },
   {
    "n": "Ramón Navarro",
    "d": "Bizcochuelo de chocolate relleno de dulce de leche.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/ramon-navarro.webp"
   },
   {
    "n": "Clásica torta de cumple",
    "d": "Bizcochuelo de vainilla relleno de dulce de leche y merengue.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/clasica-torta-de-cumple.webp"
   },
   {
    "n": "Cheesecake de Oreo",
    "d": "Cheesecake de Oreo relleno de dulce de leche.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/cheesecake-de-oreo.webp"
   },
   {
    "n": "Cheesecake",
    "d": "Cheesecake clásico con frutos rojos o frutilla.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/cheesecake.webp"
   },
   {
    "n": "Selva negra",
    "d": "Bizcochuelo de chocolate, dulce de leche, crema y cerezas, cubierta de chocolate.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/selva-negra.webp"
   },
   {
    "n": "After eight",
    "d": "Base de chocolate, mousse de menta granizada y ganache de chocolate.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/after-eight.webp"
   },
   {
    "n": "Cremoso de dulce de leche",
    "d": "Base sablé, mousse de dulce de leche granizado, merengue y cacao.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/cremoso-de-dulce-de-leche.webp"
   },
   {
    "n": "Coco Malibú",
    "d": "Base de brownie, mousse de coco y Malibú, dulce de leche y trufas.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/coco-malibu.webp"
   },
   {
    "n": "Tartaleta lemon pie",
    "d": "Sablé, curd de limón y merengue.",
-   "p16": 800,
+   "p18": 800,
    "p28": 1450,
    "foto": "img/p/tartaleta-lemon-pie.webp"
   },
   {
    "n": "Tartaleta frutal",
-   "d": "Sablé, crema pastelera y fruta (26 cm).",
-   "p16": 800,
+   "d": "Sablé, crema pastelera y fruta.",
+   "p18": 800,
    "p28": 1450,
    "foto": "img/p/tartaleta-frutal.webp"
   },
   {
    "n": "Matilda",
    "d": "Bizcochuelo de chocolate relleno de chocolate, decorado con dulce de leche.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/matilda.webp"
   },
   {
    "n": "Crumble de manzanas",
    "d": "Crumble de manzana cubierto con merengue.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/crumble-de-manzanas.webp"
   },
   {
    "n": "Marquise de naranja y chocolate",
    "d": "Bizcochito de matcha, cremoso de chocolate y naranja, gelée de frambuesas y pistachos.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/marquise-de-naranja-y-chocolate.webp"
   },
   {
    "n": "Mousse de dulce de leche",
    "d": "Base de brownie, mousse de dulce de leche y ganache de chocolate.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/mousse-de-dulce-de-leche.webp"
   },
   {
    "n": "Red velvet",
    "d": "Rellena de frutos rojos, curd de lima y cream cheese.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/red-velvet.webp"
   },
   {
    "n": "Torta praliné",
    "d": "Bizcochuelo de vainilla con crema y praliné de nueces y avellanas.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/torta-praline.webp"
   },
   {
    "n": "Torta vasca",
    "d": "Sola o con salsa de frutos rojos.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/torta-vasca.webp"
   },
   {
    "n": "Diamanta",
    "d": "Mousse de chocolate y de dulce de leche, plantillas y merengue.",
-   "p16": 1500,
+   "p18": 1500,
    "p28": 2700,
    "foto": "img/p/diamanta.webp"
   },
   {
    "n": "Cremoso de maracuyá",
    "d": "Base de chocolate, mousse de maracuyá y gelée de maracuyá.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/cremoso-de-maracuya.webp"
   },
   {
    "n": "Tiramisú",
    "d": "El clásico.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/tiramisu.webp"
   },
   {
    "n": "Rogel",
    "d": "Clásico rogel, con masa neutra o de chocolate.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/rogel.webp"
   },
   {
    "n": "Pasión de chocolate",
    "d": "Brownie, dulce de leche, crema con frutillas, chocolate y merengue.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/pasion-de-chocolate.webp"
   },
   {
    "n": "Brownie",
    "d": "Brownie con dulce de leche y merengue.",
-   "p16": 1300,
+   "p18": 1300,
    "p28": 2500,
    "foto": "img/p/brownie.webp"
   },
   {
    "n": "Gâteau de frutillas",
    "d": "Bizcochuelo de vainilla, crema chantilly y frutillas.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/gateau-de-frutillas.webp"
   },
   {
    "n": "Fraisier de frutillas",
    "d": "Crema pastelera, frutillas y gelée.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/frassier-de-frutillas.webp"
   },
   {
    "n": "Key lime pie",
    "d": "Cítricos y leche condensada, decorado con crema batida.",
-   "p16": 1400,
+   "p18": 1400,
    "p28": 2600,
    "foto": "img/p/key-lime-pie.webp"
   }

@@ -22,7 +22,10 @@
       if (cache) return cache;
     } else {
       const demo = leerLocal(CLAVE_DEMO);
-      if (demo && demo.carta) return demo;
+      if (demo && demo.carta) {
+        (demo.postres || []).forEach((p) => { if (p.p18 == null) { p.p18 = p.p16; delete p.p16; } });
+        return demo;
+      }
     }
     const r = await fetch("data/carta.json", { cache: "no-store" });
     return r.json();

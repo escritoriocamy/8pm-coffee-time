@@ -159,7 +159,7 @@
     let n = 0;
     if (donde === "carta" || donde === "todo") D.carta.forEach((c) => c.items.forEach((it) => { it.p = r(it.p); n++; }));
     if (donde === "bocaditos" || donde === "todo") D.bocaditos.forEach((b) => { b.p = Math.round(b.p * (1 + pct / 100)); n++; });
-    if (donde === "postres" || donde === "todo") D.postres.forEach((p) => { p.p16 = r(p.p16); p.p28 = r(p.p28); n++; });
+    if (donde === "postres" || donde === "todo") D.postres.forEach((p) => { p.p18 = r(p.p18); p.p28 = r(p.p28); n++; });
     if (donde === "combos" || donde === "todo") D.combos.forEach((k) => { k.precio = r(k.precio); n++; });
     if (donde === "todo") { D.menuSemana.precioCompleto = r(D.menuSemana.precioCompleto); D.menuSemana.precioSolo = r(D.menuSemana.precioSolo); }
     marcarSucio(); pintar(); toast(`${n} precios actualizados (falta guardar)`);
@@ -242,7 +242,7 @@
       return `<h2>Menú <em>semanal</em></h2><p class="ayuda">El plato de cada día. La web destaca solo el de hoy.</p>
       <div class="tarjeta"><div class="dos">${campo("Precio con postre y bebida", num("menuSemana.precioCompleto", m.precioCompleto))}${campo("Precio solo el plato", num("menuSemana.precioSolo", m.precioSolo))}</div></div>
       ${m.dias.map((d, i) => `<div class="tarjeta"><h3>${esc(d.dia)}</h3>${campo("Plato", inp(`menuSemana.dias.${i}.plato`, d.plato))}${campo("Descripción", `<textarea data-k="menuSemana.dias.${i}.desc" rows="3">${esc(d.desc)}</textarea>`)}</div>`).join("")}
-      <div class="tarjeta"><h3>Vegetariano de la semana</h3>${campo("Texto", inp("menuSemana.vegetariano", m.vegetariano))}</div>`;
+      <div class="tarjeta"><h3>Vegetariano de la semana</h3>${campo("Opciones (separalas con ·)", inp("menuSemana.vegetariano", m.vegetariano))}</div>`;
     },
     carta() {
       return `<h2>La <em>carta</em></h2><p class="ayuda">Cambiá nombres, precios y descripciones. Apagá “Visible” para sacar algo un tiempo sin borrarlo.</p>
@@ -264,15 +264,15 @@
       <button class="agregar" data-acc="agregar" data-k="combos" data-nuevo='{"personas":0,"precio":0,"items":[]}'>+ Agregar combo</button>`;
     },
     postres() {
-      return `<h2>Catálogo de <em>tortas</em></h2><p class="ayuda">Dos precios: 16 cm y 28 cm. Las fotos quedan mejor cuadradas, con la torta al centro.</p>
+      return `<h2>Catálogo de <em>tortas</em></h2><p class="ayuda">Dos precios: 18 cm y 28 cm. Las fotos quedan mejor cuadradas, con la torta al centro.</p>
       <div>${D.postres.map((p, i) => {
         const b = `postres.${i}`;
         return `<div class="fila ${p.oculto ? "oculta" : ""}">${foto(b + ".foto", p.foto, true)}
           <div class="fila-txt">${inp(b + ".n", p.n)}<textarea data-k="${b}.d" rows="1">${esc(p.d)}</textarea></div>
-          <div class="fila-precio">${num(b + ".p16", p.p16)}<small style="font-size:11px;opacity:.6">16 cm</small>${num(b + ".p28", p.p28)}<small style="font-size:11px;opacity:.6">28 cm</small>
+          <div class="fila-precio">${num(b + ".p18", p.p18)}<small style="font-size:11px;opacity:.6">18 cm</small>${num(b + ".p28", p.p28)}<small style="font-size:11px;opacity:.6">28 cm</small>
           <div class="interruptor"><small>Visible</small>${sw(b + ".oculto", !p.oculto, true)}</div></div>${acciones(b)}</div>`;
       }).join("")}
-      <button class="agregar" data-acc="agregar" data-k="postres" data-nuevo='{"n":"","d":"","p16":0,"p28":0,"foto":""}'>+ Agregar torta</button></div>`;
+      <button class="agregar" data-acc="agregar" data-k="postres" data-nuevo='{"n":"","d":"","p18":0,"p28":0,"foto":""}'>+ Agregar torta</button></div>`;
     },
     horarios() {
       const orden = [1, 2, 3, 4, 5, 6, 0];

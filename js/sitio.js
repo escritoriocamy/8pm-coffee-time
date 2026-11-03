@@ -7,11 +7,13 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const DIAS = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
-  const MIN_BOC = 12, PASO_BOC = 6, BOC_X_PERSONA = 12;
+  const MIN_BOC = 12, PASO_BOC = 1, BOC_X_PERSONA = 12;
+  const DIAS_TORTA = 3, DIAS_LUNCH = 5;
 
   let D = null;
-  let pedido = Ocho.leerLocal("ocho_pedido") || [];
-  let tam = "16";
+  let pedido = (Ocho.leerLocal("ocho_pedido") || []).filter((l) => !/^p:.*:16$/.test(l.id));
+  pedido.forEach((l) => { if (l.id.startsWith("b:")) l.paso = PASO_BOC; });
+  let tam = "18";
 
   /* ---------- Bienvenida (una vez por visita) ---------- */
   const splash = $("#splash");
@@ -58,6 +60,8 @@
     const semana = $("#semana");
     semana.innerHTML = m.dias.map((d, i) => `<li data-i="${i}" class="${i === hoyIdx ? "es-hoy" : ""} ${hoyIdx > -1 && i < hoyIdx ? "pasado" : ""}">
         <b>${esc(d.dia)}</b><span>${esc(d.plato)}</span></li>`).join("");
+    const vegs = String(m.vegetariano || "").split("·").map((x) => x.trim()).filter(Boolean);
+    if (vegs.length) semana.insertAdjacentHTML("beforeend", `<li class="veg"><b>🌱 Vegetariano</b>${vegs.map((v) => `<span>${esc(v)}</span>`).join("")}</li>`);
     function mostrar(i) {
       const d = m.dias[i];
       const etiqueta = i === hoyIdx ? "Hoy · " + d.dia : hoyIdx === -1 && i === 0 ? "El lunes vuelve" : d.dia;
@@ -72,11 +76,10 @@
         agregar({ id: `m:${slug(d.dia)}:${b.dataset.op}`, nombre: `Menú del ${d.dia.toLowerCase()}: ${d.plato}`, detalle: completo ? "Con postre y bebida" : "Solo el plato",
           precio: completo ? m.precioCompleto : m.precioSolo, cant: 1, paso: 1, min: 1 });
       }));
-      $$("li", semana).forEach((li) => li.classList.toggle("visto", +li.dataset.i === i && i !== hoyIdx));
+      $$("li[data-i]", semana).forEach((li) => li.classList.toggle("visto", +li.dataset.i === i && i !== hoyIdx));
     }
-    $$("li", semana).forEach((li) => li.addEventListener("click", () => mostrar(+li.dataset.i)));
+    $$("li[data-i]", semana).forEach((li) => li.addEventListener("click", () => mostrar(+li.dataset.i)));
     mostrar(hoyIdx === -1 ? 0 : hoyIdx);
-    $("#veggie").innerHTML = m.vegetariano ? `<b>🌱 Opción vegetariana de la semana:</b> ${esc(m.vegetariano)}` : "";
   }
 
   /* =================== CARTA =================== */
@@ -185,7 +188,7 @@
         <button class="btn-chico" data-n="${esc(p.n)}">Encargar</button></article>`).join("");
     $$("#tortas .btn-chico").forEach((b) => b.addEventListener("click", () => {
       const p = D.postres.find((x) => x.n === b.dataset.n);
-      agregar({ id: `p:${slug(p.n)}:${tam}`, nombre: p.n, foto: p.foto, detalle: `${tam} cm · encargo con 3 días de anticipación`, precio: p["p" + tam], cant: 1, paso: 1, min: 1, encargo: true, postre: true });
+      agregar({ id: `p:${slug(p.n)}:${tam}`, nombre: p.n, foto: p.foto, detalle: `${tam} cm · encargo con ${DIAS_TORTA} días de anticipación`, precio: p["p" + tam], cant: 1, paso: 1, min: 1, encargo: true, postre: true });
     }));
   }
   const bola = $(".tam-bola");
@@ -294,14 +297,18 @@
     }
     pintarSugerencia();
     /* fecha mínima: tortas con 3 días */
+    const hayLunch = pedido.some((l) => /^[bk]:/.test(l.id));
     const f = form.fecha;
-    const min = new Date(); min.setDate(min.getDate() + (hayPostre ? 3 : 0));
+    const min = new Date(); min.setDate(min.getDate() + (hayLunch ? DIAS_LUNCH : hayPostre ? DIAS_TORTA : 0));
     f.min = fechaISO(min);
-    if (!f.value || f.value < f.min) f.value = f.min;
+    if (!f.value || f.value < f.min) {
+      for (let i = 0; i < 7 && !(D.horarios[min.getDay()] || {}).abre; i++) min.setDate(min.getDate() + 1);
+      f.value = fechaISO(min);
+    }
     pintarDias();
     const aviso = $("#notaFecha");
-    aviso.textContent = hayPostre ? "🎂 Las tortas se encargan con 3 días de anticipación y se confirman con 50% de seña."
-      : hayEncargo ? "🥪 El lunch se confirma con 50% de seña. Cuanto antes nos avises, mejor." : "";
+    aviso.textContent = hayLunch ? `🥪 El lunch se encarga con ${DIAS_LUNCH} días de anticipación y se confirma con 50% de seña.`
+      : hayPostre ? `🎂 Las tortas se encargan con ${DIAS_TORTA} días de anticipación y se confirman con 50% de seña.` : "";
     aviso.hidden = !aviso.textContent;
   }
 
@@ -376,6 +383,7 @@
     if (!f.nombre.trim()) { marcarError(form.nombre); toast("Decinos tu nombre"); return; }
     const envio = f.entrega.startsWith("Envío");
     if (envio && !f.direccion.trim()) { marcarError(form.direccion); toast("Falta la dirección"); return; }
+    if (f.fecha < form.fecha.min) { marcarError(form.fecha); toast("Elegí una fecha con más anticipación"); return; }
     const ahora = new Date();
     const numero = `8PM-${String(ahora.getMonth() + 1).padStart(2, "0")}${String(ahora.getDate()).padStart(2, "0")}-${String(Math.floor(Math.random() * 900) + 100)}`;
     const fecha = f.fecha ? new Date(f.fecha + "T12:00").toLocaleDateString("es-UY", { weekday: "long", day: "numeric", month: "long" }) : "";

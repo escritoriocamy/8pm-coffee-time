@@ -147,8 +147,10 @@ h1 em, h2 em, h3 em, .pie-grande em, .splash-txt em, .cajon-cab em {
 .semana li.es-hoy b { color: var(--bosque); }
 .semana li.pasado { opacity: .5; }
 .semana li.visto { border-color: var(--bosque); }
-.veggie { margin: 22px 0 0; font-size: 15px; }
-.veggie b { color: var(--salvia); }
+.semana li.veg { grid-template-columns: 1fr; gap: 6px; background: var(--salvia-3); cursor: default; }
+.semana li.veg:hover { border-color: transparent; }
+.semana li.veg b { font-size: 20px; color: var(--bosque); }
+.semana li.veg span { display: block; }
 
 /* ---------- Carta ---------- */
 .carta { background: var(--bosque); color: var(--crema); }
@@ -199,6 +201,9 @@ h1 em, h2 em, h3 em, .pie-grande em, .splash-txt em, .cajon-cab em {
 .combo.rec .combo-badge { visibility: visible; }
 .btn-chico { border: 0; background: var(--bosque); color: var(--crema); padding: 11px 16px; border-radius: 99px; font-weight: 700; font-size: 14px; }
 .combo:not(.rec) .btn-chico { background: var(--crema); color: var(--bosque); }
+.lunch-reglas { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 22px 0 0; }
+.lunch-reglas li { background: var(--bosque); color: var(--crema); padding: 10px 18px; border-radius: 99px; font-size: 14px; }
+.lunch-reglas b { color: var(--oro); }
 .lunch-h3 { font-size: clamp(36px, 5vw, 60px); margin: 50px 0 26px; }
 .lunch-wrap { display: grid; grid-template-columns: 1fr 300px; gap: 26px; align-items: start; }
 .bocs { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
@@ -228,7 +233,8 @@ h1 em, h2 em, h3 em, .pie-grande em, .splash-txt em, .cajon-cab em {
 /* ---------- Postres ---------- */
 .postres { background: var(--crema); position: relative; }
 .postres h2 em { color: var(--salvia); }
-.tam { position: relative; display: inline-flex; background: var(--crema-2); border-radius: 99px; padding: 5px; margin-bottom: 40px; }
+.tam { position: relative; display: inline-flex; background: var(--crema-2); border-radius: 99px; padding: 5px; margin-bottom: 14px; }
+.tam-nota { max-width: 560px; font-size: 14px; opacity: .75; margin: 0 0 40px; }
 .tam button { position: relative; z-index: 1; border: 0; background: transparent; padding: 12px 24px; border-radius: 99px; font-weight: 700; transition: color .3s; }
 .tam button small { display: block; font-weight: 500; font-size: 11px; opacity: .7; }
 .tam button.on { color: var(--crema); }
@@ -513,7 +519,7 @@ h1 em, h2 em, h3 em, .pie-grande em, .splash-txt em, .cajon-cab em {
   .hero-btns .btn { flex: 1 1 100%; }
   .marquee span { font-size: 22px; }
   .info-grid { grid-template-columns: 1fr; }
-  .semana li { grid-template-columns: 78px 1fr; padding: 13px 14px; }
+  .semana li { grid-template-columns: 90px 1fr; padding: 13px 14px; }
   .buscar { min-width: 0; flex: 1 1 100%; }
   .bocs { grid-template-columns: 1fr 1fr; gap: 10px; }
   .boc-txt p { display: none; }
